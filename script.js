@@ -15,17 +15,19 @@
     body.classList.add("dark");
   }
 
-  function updateLabel() {
-    toggle.textContent = body.classList.contains("dark") ? "Light mode" : "Dark mode";
+  function updateButton() {
+    var isDark = body.classList.contains("dark");
+    toggle.textContent = isDark ? "☀️" : "🌙";
+    toggle.title = isDark ? "Light mode" : "Dark mode";
   }
 
-  updateLabel();
+  updateButton();
 
   toggle.addEventListener("click", function () {
     var isDark = body.classList.toggle("dark");
     try {
       localStorage.setItem("theme", isDark ? "dark" : "light");
     } catch (e) {}
-    updateLabel();
+    updateButton();
   });
 })();
