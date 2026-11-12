@@ -5,6 +5,7 @@
   --muted: #6b625b;
   --accent: #7a2e3a;
   --line: #e6ddd0;
+  --button-border: #8a7e72;
 }
 
 * {
@@ -226,6 +227,7 @@ body.dark {
   --muted: #b0a79c;
   --accent: #d9a0a8;
   --line: #3a332e;
+  --button-border: #8c8077;
   background: var(--bg);
   color: var(--ink);
 }
@@ -258,7 +260,7 @@ body.dark figcaption {
 #themeToggle {
   background: transparent;
   color: var(--muted);
-  border: 1px solid var(--line);
+  border: 1px solid var(--button-border);
   border-radius: 999px;
   padding: 4px 12px;
   margin-left: 18px;
