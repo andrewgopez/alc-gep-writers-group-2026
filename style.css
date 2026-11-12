@@ -273,3 +273,51 @@ body.dark figcaption {
   color: var(--accent);
   border-color: var(--accent);
 }
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 700px) {
+  header.site {
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px 12px;
+  }
+
+  header.site nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 6px 0;
+  }
+
+  header.site nav a {
+    margin: 0 9px;
+  }
+
+  #themeToggle {
+    margin-left: 9px;
+  }
+
+  .wrap,
+  .wrap-center {
+    padding: 28px 12px 0;
+  }
+
+  .pair {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    text-align: center;
+  }
+
+  footer {
+    padding: 24px 12px 40px;
+  }
+}
