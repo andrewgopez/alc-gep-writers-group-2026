@@ -1,3 +1,4 @@
+/* Styles for index.html and photos.html */
 :root {
   --bg: #faf6ef;
   --ink: #2a2522;
@@ -5,11 +6,11 @@
   --accent: #7a2e3a;
   --line: #e6ddd0;
 }
- 
+
 * {
   box-sizing: border-box;
 }
- 
+
 body {
   margin: 0;
   background: var(--bg);
@@ -17,7 +18,7 @@ body {
   font-family: "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
 }
- 
+
 h1 {
   font-family: Georgia, "Times New Roman", serif;
   font-weight: 700;
@@ -25,7 +26,15 @@ h1 {
   font-size: clamp(2rem, 6vw, 3.4rem);
   margin: 0 0 12px;
 }
- 
+
+h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: clamp(1.5rem, 4vw, 2.1rem);
+  margin: 0 0 8px;
+}
+
 /* Header */
 header.site {
   display: flex;
@@ -37,18 +46,19 @@ header.site {
   font-size: 0.95rem;
   border-bottom: 1px solid var(--line);
 }
- 
+
 .brand {
   font-family: Georgia, serif;
   font-weight: 700;
 }
- 
+
 header.site nav a {
   margin-left: 18px;
   text-decoration: none;
   color: var(--muted);
+  padding-bottom: 3px;
 }
- 
+
 header.site nav a:hover {
   color: var(--accent);
 }
@@ -56,17 +66,16 @@ header.site nav a:hover {
 header.site nav a.active {
   color: var(--accent);
   border-bottom: 2px solid var(--accent);
-  padding-bottom: 3px;
 }
- 
-/* Main content */
+
+/* Home page */
 .wrap-center {
   max-width: 1100px;
   margin: 0 auto;
   padding: 40px 16px 0;
   text-align: center;
 }
- 
+
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.15em;
@@ -74,41 +83,14 @@ header.site nav a.active {
   color: var(--accent);
   margin: 0 0 12px;
 }
- 
+
 .lead {
   max-width: 640px;
   margin: 0 auto 28px;
   color: var(--muted);
   font-size: 1.1rem;
 }
- 
-figure {
-  margin: 0;
-}
- 
-.photo {
-  background: linear-gradient(135deg, #eadfce, #d9cbb7);
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 6px 24px rgba(42, 37, 34, 0.12);
-  aspect-ratio: 3 / 2;
-}
- 
-.photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
- 
-figcaption {
-  margin-top: 10px;
-  font-size: 0.95rem;
-  color: var(--muted);
-  font-style: italic;
-}
- 
-/* Buttons */
+
 .buttons {
   margin-top: 28px;
   display: flex;
@@ -116,7 +98,7 @@ figcaption {
   justify-content: center;
   flex-wrap: wrap;
 }
- 
+
 .btn {
   display: inline-block;
   padding: 10px 20px;
@@ -126,16 +108,63 @@ figcaption {
   text-decoration: none;
   font-size: 0.95rem;
 }
- 
+
 .btn.primary {
   background: var(--accent);
   color: #fff;
 }
- 
+
 .btn:hover {
   opacity: 0.85;
 }
- 
+
+/* Photos page */
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 16px 0;
+}
+
+.sub {
+  color: var(--muted);
+  margin: 0 0 28px;
+  max-width: 640px;
+}
+
+.pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Shared photo frame and captions */
+figure {
+  margin: 0;
+}
+
+.photo {
+  background: linear-gradient(135deg, #eadfce, #d9cbb7);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(42, 37, 34, 0.12);
+  aspect-ratio: 3 / 2;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+figcaption {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: var(--muted);
+  text-align: center;
+  font-style: italic;
+}
+
 /* Footer */
 footer {
   max-width: 1100px;
