@@ -218,3 +218,56 @@ footer {
   color: var(--muted);
   font-size: 0.9rem;
 }
+
+/* Dark Mode */
+body.dark {
+  --bg: #15110f;
+  --ink: #f3ede4;
+  --muted: #b0a79c;
+  --accent: #d9a0a8;
+  --line: #3a332e;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+body.dark .card {
+  background: #221c19;
+}
+
+body.dark .photo {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+}
+
+body.dark .btn.primary {
+  color: #15110f;
+}
+
+body.dark header.site nav a.active {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
+}
+
+body.dark .sub {
+  color: #e8dccb;
+}
+
+body.dark figcaption {
+  color: #c9b8a0;
+}
+
+#themeToggle {
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px 12px;
+  margin-left: 18px;
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+#themeToggle:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
