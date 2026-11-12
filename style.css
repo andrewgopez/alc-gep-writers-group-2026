@@ -165,6 +165,49 @@ figcaption {
   font-style: italic;
 }
 
+/* Class page */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: #fffdf9;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.card h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  margin: 0 0 6px;
+  font-size: 1.15rem;
+  color: var(--accent);
+}
+
+.card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.about {
+  margin-top: 56px;
+}
+
+.about p {
+  max-width: 700px;
+  font-size: 1.05rem;
+}
+
+.icon {
+  display: block;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
 /* Footer */
 footer {
   max-width: 1100px;
