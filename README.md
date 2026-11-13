@@ -18,8 +18,8 @@ style.css        Shared styles for all pages
 script.js        Dark mode toggle, shared by all pages
 photos/
   class.jpg
-  group-1.jpg
-  group-2.jpg
+  group_1.jpg
+  group_2.jpg
 ```
 
 Photo filenames are case-sensitive and must match the `src` in each HTML file exactly.
@@ -32,7 +32,7 @@ Photo filenames are case-sensitive and must match the `src` in each HTML file ex
 
 ## Privacy
 
-The pages include a `noindex, nofollow` tag so search engines don't list them. Anyone with the link can still open the site, so only share it with the class. If someone would prefer not to appear, remove their photo or crop them out and replace the image.
+The pages include a `noindex, nofollow` tag so search engines don't list them. Anyone with the link can still open the site, so only share it with the class.
 
 ## Hosting
 
