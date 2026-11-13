@@ -44,4 +44,4 @@ https://andrewgopez.github.io/alc-gep-writers-group-2026/index.html
 
 ## Credits
 
-Made by Andrew Kyle Gopez, with thanks to the classmates and teachers of the Winter 2026 writers group.
+Made by Andrew Kyle Gopez, with thanks to our GEP teacher and to the classmates of the Winter 2026 writers group.
